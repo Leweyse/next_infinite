@@ -1,0 +1,49 @@
+.svgSmall {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.svgMedium {
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.svgLarge {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.svgAbsolute {
+  position: absolute;
+}
+
+.svgBackground {
+  z-index: 0;
+}
+
+.svgForeground {
+  z-index: 5;
+}
+
+#square {
+  top: 65%;
+  left: 20%;
+  transition: ease-in-out;
+}
+#triangle {
+  top: 5%;
+  left: 10%;
+}
+#parallelogram {
+  top: 2%;
+  right: 20%;
+}
+#circle {
+  top: 45%;
+  right: 15%;
+}
+
+#blob {
+  width: 80%;
+  height: 80%;
+}

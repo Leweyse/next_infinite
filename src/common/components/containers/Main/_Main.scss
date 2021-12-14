@@ -1,0 +1,12 @@
+main {
+  --py: 0px;
+
+    position: absolute;
+    width: 100%;
+
+    transform: translate(0, var(--py));
+    transition: transform 0.5s linear;
+    
+    will-change: auto;
+    z-index: 1111;
+}
