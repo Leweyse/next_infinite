@@ -16,7 +16,6 @@ const Template3 = (props) => {
     let tl = gsap.timeline();
 
     useEffect(() => {
-        imgBg.current.style.setProperty('background', `url(${imageInfo.urlRegular})`);
         imgBg.current.style.setProperty('background-position', 'center');
 
         let centerX = main.current.clientWidth / 2;
@@ -48,7 +47,7 @@ const Template3 = (props) => {
                     <Title class={"t3-title"} content={"Welcome!"} color = {colorScheme.accent3} />
                 </span>
                 <div ref={imgContainer} id={"imageContainer"}>
-                    <div ref={imgBg} id={"imageBg"}></div>
+                    <div ref={imgBg} id={"imageBg"} style={{background: `url(${imageInfo.urlRegular})`}}></div>
                 </div>
             </div>
             <Text id={'t3-text'} text={"scroll"} accent={colorScheme.accent1}/>
