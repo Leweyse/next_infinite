@@ -24,8 +24,6 @@ const Main = () => {
                 clientHeight
             } = document.documentElement;
 
-            console.log(sectionHeight)
-
             if (scrollTop + clientHeight >= (scrollHeight - 5) / 1.15) setDisplay(true);
 
         })

@@ -1,72 +1,80 @@
 #t3-main {
-  font-family: monospace;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-}
-
-#t3-title1 {
-  position: relative;
-  width: 50VH;
-  display: flex;
-  justify-content: center;
-  top: 19.2VH;
-  height: fit-content;
-  z-index: 10;
-}
-
-#t3-title2 {
-  position: absolute;
-  width: 50VH;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left:50%;
-  transform: translate(-50%, -50%);
-  height: fit-content;
-  z-index: 5;
-}
-
-.t3-title {
-  height: fit-content;
-  font-size: 6rem;
-  font-weight: bold;
-}
-
-#t3-imgContainer {
-  position: absolute;
-  top: 50VH;
-  transform: translate(-0%, -50%);
-  width: 50VH;
-  height: 50VH;
-  overflow: hidden;
-  z-index: 1;
-  .img {
-    width: 50VH;
-    height: 50VH;
     position: relative;
-  }
-}
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
 
-#t3-img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 80VH;
-  height: 80VH;
-  object-fit: cover;
-  object-position: center;
-}
+    font-family: monospace;
 
-#t3-text{
-  width: 100VW;
-  font-size: 10rem;
-  position: absolute;
-  top: 50%;
-  left: 3%;
-  mix-blend-mode: multiply;
-  z-index: 0;
+    overflow: hidden;
+
+    #t3-title1 {
+        position: relative;
+        display: flex;
+        top: 19.2VH;
+        width: 50VH;
+        height: fit-content;
+        justify-content: center;
+
+        .t3-title {
+            height: fit-content;
+            font-size: 6rem;
+            font-weight: bold;
+        }
+    }
+
+    #t3-imgContainer {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        width: 70%;
+        height: 70%;
+      
+        justify-content: center;
+        clip-path: polygon(30% 90%, 30% 10%, 70% 10%, 70% 90%);
+      
+        transform: translate(-0%, -50%);
+        overflow: hidden;
+        z-index: 1111;
+
+        #imageContainer,
+        #imageBg {
+            width: 100%;
+            height: 100%;
+
+            z-index: -1;
+        }
+
+        #t3-title2 {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t3-title {
+            font-size: 5rem;
+        }
+
+        #imageContainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imageBg {
+            background-position: center;
+        }
+    }
+
+    #t3-text{
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 100VW;
+    
+        font-size: 10rem;
+        mix-blend-mode: multiply;
+    
+        z-index: 0;
+    }
 }
