@@ -2,11 +2,10 @@
     --accent: red;
     --size: 50%;
 
-    display: flex;
+    display: grid;
     height: 100vh;
 
-    flex-direction: row;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
 
     background: radial-gradient(circle, var(--accent) 0%, var(--bg) var(--size));
     background-size: 200% 200%;
@@ -15,10 +14,11 @@
 
     .left {
         position: relative;
-        top: 40vh;
+        display: grid;
+        place-items: center;
     
         .t1-title {
-            max-width: 30vw;
+            max-width: 70%;
             color: var(--clr-difference);
             font-size: 5rem;
             mix-blend-mode: difference;
@@ -27,8 +27,14 @@
     
     .right {
         position: relative;
-        top: 50%;
-        transform: translate(0, -25%);
+        display: grid;
+        width: 100%;
+
+        place-items: center;
+
+        .img {
+            width: 50%;
+        }
     }
 }
 

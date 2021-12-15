@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Img, Title } from '../../../blocks';
 
-
 const Template1 = (props) => {
     let imageInfo = props.imgInfo;
     let colorScheme = props.scheme;
@@ -30,7 +29,7 @@ const Template1 = (props) => {
             <aside className={'right'}>
                 <Img 
                     className={'image imgCenter imgMedium t1-img'}
-                    url={imageInfo.url}
+                    url={imageInfo.urlRegular}
                     description={imageInfo.description}
                     credit={imageInfo.credit}
                     creditUrl={imageInfo.creditUrl}

@@ -20,7 +20,7 @@ const Template2 = (props) => {
     useEffect(() => {
         gsap.set(img.current, {
             xPercent: -50,
-            yPercent: -50
+            yPercent: -25
         });
 
         window.addEventListener('mousemove', (e) => {
@@ -48,6 +48,7 @@ const Template2 = (props) => {
             <Img
                 ref={img}
                 id={'t2-img'}
+                className={'image'}
                 url={imageInfo.urlRegular}
                 description={imageInfo.description}
                 credit={imageInfo.credit}
