@@ -1,5 +1,5 @@
 import { Header, Main, Nav, Section, Template1 } from './containers';
-import { Image, Link, Text, Title, Svg, Button } from "./blocks";
+import { Img, Link, Text, Title, Svg, Button } from "./blocks";
 
 export {
 // CONTAINERS
@@ -9,7 +9,7 @@ export {
     Section,
     Template1,
 // BLOCKS
-    Image, 
+    Img,
     Link, 
     Text, 
     Title,

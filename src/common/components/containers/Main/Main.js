@@ -1,18 +1,19 @@
 import { useState, useRef, useEffect } from 'react';
 import Section from '../Section/Section';
+import {getRandom} from "../../../utils";
 
 // let position = {
 //     x: 0,
 //     y: 0
 // }
 
-let pages = [<Section key={0} />, <Section key={1} />, <Section key={2} />];
+let pages = [<Section key={0} />];
 
 const Main = () => {
 
     const [display, setDisplay] = useState(false);
     const mainRef = useRef();
-    let keyRef = useRef(3);
+    let keyRef = useRef(1);
 
     useEffect(() => {
         const sectionHeight = (mainRef.current.clientHeight / pages.length);

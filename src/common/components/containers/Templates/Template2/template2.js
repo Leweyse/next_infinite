@@ -1,6 +1,5 @@
 import { createRef, useRef, useEffect } from "react";
 import { gsap } from "gsap";
-
 import { Img, Title } from '../../../blocks';
 
 const Template2 = (props) => {
